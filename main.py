@@ -21,11 +21,9 @@ Recetas.append(Receta("3", "admin", "Pollo Guisado", "Aprende a preparar la trad
 Recetas.append(Receta("4", "admin", "Albóndigas en salsa boloñesa", "Albóndigas en salsa boloñesa, perfectas para acompañar con arroz, pasta o vegetales.", "30 Gramos Caldo Casero Sabor Res MAGGI® - 2 Piezas Huevo - Cebolla Blanca - Carne Molida De Res - Pan Francés - Pan molido - Cilantro Cortado finamente - Aceite De Oliva - Salsa De Tomate Bolognesa - Agua - sal - Pimienta Negra Molida Al gusto", "Precalentar el horno a 250°C. En un recipiente, marinar la carne molida con Sal de Ajo, Caldo Casero MAGGI® sabor res, huevos, cebolla rallada y pan molido. Revolver con la mano hasta que quede bien mezclado. Dejar reposar por 5 minutos. Formar las bolitas de carne con pequeñas porciones, colocarlas en una bandeja para horno con aceite de oliva y cubrirlas con papel aluminio. Llevar al horno y cocinar a 200°C por 20 minutos. Retirar del horno. Colocar las albóndigas cocidas en una cacerola mediana, agregar la Salsa de Tomate MAGGI® estilo boloñesa, agua y cocinar a fuego medio por 15 minutos con la cacerola tapada. Apagar y ajustar el punto de sal y pimienta necesario.", "43 minutos", "https://d1uz88p17r663j.cloudfront.net/original/80938383d8e309b0dd6fc32817c1b2e3_alal.png"))
 
 
-#def validar_login(user, contrasena):
-    #for usuario in Usuarios:
-     #   if usuario.nombre == user and usuario.contrasena == contrasena:
-      #      return usuario
-    #return None
+@app.route('/', methods =['GET'])
+def rutaIniciao():
+    return("<h1>Api de Proyecto 2 - 201905743</h1>")
 
 @app.route('/Personas', methods=['GET'])
 def obtenerPersonas():
